@@ -13,11 +13,12 @@ spec:
     spec:
       containers:
       - name: go-hpa
-        image: rschiavi0/go-hpa
+        image: img-app-deployment
         resources:
           requests:
             cpu: "50m"
           limits:
             cpu: "100m"
+            memory: "128Mi"
         ports:
         - containerPort: 8000
